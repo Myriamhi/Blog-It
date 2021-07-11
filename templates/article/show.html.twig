@@ -1,0 +1,15 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil{% endblock %}
+
+{% block body %}
+
+<div style="margin:5px 150px 50px 150px">
+    <figure style="margin:auto">
+        <img src="{{article.image}}" alt="photo">
+    </figure>
+    <h1 style="font-size:25px">"{{article.title}}" </h1>
+    <p>"{{article.description}}" </p>
+     <small class="text-muted">Date de publication : {{article.createdAt|date("d/m/Y")}}</small>
+</div>
+{% endblock %}
